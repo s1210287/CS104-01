@@ -3,7 +3,7 @@
     
 names  = []
 for x in range(0,10):
-    aName = input("Enter a name to search for:")
+    aName = input("Enter a name:")
     names.append(aName)
 
 end = input('Type End to end the program: ')
@@ -13,7 +13,7 @@ if end == 'End':
 print(names)
 endChoice = False
 while not endChoice:
-    search = input("Enter a search name:")
+    search = input("Enter a name to search for or 'End' to end the program:")
 
     if search in names:
         print(search, "was found")
