@@ -1,8 +1,8 @@
-#Kathryn Schauer
-#s1210287
 #version 1
+name = input("Enter your first and last name: ")
+ID = int(input("Enter your ID number: "))
 
-richter = float(input("Please enter richter value: ")
+richter = float(input("Please enter richter value: "))
 if richter >= 8.0:
     print ("Most structures fall")
 elif richter >= 7.0:

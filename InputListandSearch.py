@@ -6,9 +6,9 @@ for x in range(0,10):
     aName = input("Enter a name:")
     names.append(aName)
 
-end = input('Type End to end the program: ')
-if end == 'End':
-    exit(0)
+#end = input('Type End to end the program: ')
+#if end == 'End':
+    #exit(0)
 
 print(names)
 endChoice = False
