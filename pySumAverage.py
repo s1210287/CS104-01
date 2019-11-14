@@ -16,21 +16,17 @@
 name = input("Enter your first and last name: ")
 ID = int(input("Enter yor ID number: "))
 
-end = False
-numberList =[]
-sumint=0
-for x in range(0,20):
-    aNumber=int(input("Enter a number:"))
-    numberList.append(aNumber)
+numberList = []
+sumInt = 0
+avgInt = 0.0
 
 for x in range(0,20):
-    sumint = sumint + numberList[x]
-    print("The sum of the numbers you entered is:")
-    print(sumint)
+    numberList.append (int(input("Enter a number:")))
 
-    average = sumint/len(numberList)
-    print("The average of the numbers you entered is:")
-    print(average)
-
-
+for x in range (0,20):
+    sumInt += numberList[x]
     
+avgInt = sumInt/20
+
+print("The sum of the numbers you entered is ", sumInt)
+print("The average of the numbers you entered is ", avgInt)

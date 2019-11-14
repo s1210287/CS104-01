@@ -10,6 +10,8 @@ ID = int(input("Enter your ID number: "))
 yes = False
 while not yes:
     richter = float(input("Enter the Richter scale value or -99 to end: "))
+    if richter == -99:
+        exit(0)
     if richter >= 8.0:
         print ("Most structures fall")
     elif richter >= 7.0:
@@ -23,8 +25,6 @@ while not yes:
     else:
         print("Value must be greater than 0")
 
-    if richter == -99:
-        exit(0)
-            
+    
             
 
